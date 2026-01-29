@@ -1,0 +1,14 @@
+Icarus Verilog help at:
+https://steveicarus.github.io/iverilog/
+
+To compile in current directory (applies to test benches also):
+iverilog -o [executable name] [filename].v [otherfiles?].v 
+
+To run:
+vvp [executable name]
+
+testing main structure:
+iverilog -g2012 -o complilation_test synth.sv wave_period_calculator.sv i2s_transmitter.sv debouncer.sv
+
+wave_period_calculator:
+iverilog -g2012 -o tb_wave_period_calculator tb_wave_period_calculator.sv wave_period_calculator.sv

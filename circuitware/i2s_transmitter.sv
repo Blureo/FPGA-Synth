@@ -70,8 +70,8 @@ module i2s_transmitter
                 else begin
                     if (tone_timer >= wave_half_period) begin
                         tone_timer <= 0;
-                        if (sound_bits == 16'b0111111111111111) sound_bits <= 16'b1000000000000000;
-                        else                                    sound_bits <= 16'b0111111111111111;
+                        if (sound_bits == 16'b0111111111111111) sound_bits <= 16'b1000000000000000; // 16'b1000000000000000; // 16'b1100000000000001
+                        else                                    sound_bits <= 16'b0111111111111111; // 16'b0111111111111111; // 16'b0011111111111111
                     end
                     else tone_timer <= tone_timer + 1;
                 end

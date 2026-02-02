@@ -34,18 +34,18 @@ module wave_period_selector
             12.288 MHz signal
     */
 
-    localparam half_period_1  = 92; // 0x5C | C4  = 261.6 Hz
-    localparam half_period_2  = 87; // 0x57 | C#4 = 277.2 Hz
-    localparam half_period_3  = 82; // 0x52 | D4  = 293.7 Hz
-    localparam half_period_4  = 77; // 0x4D | Eb4 = 311.1 Hz
-    localparam half_period_5  = 73; // 0x49 | E4  = 329.6 Hz
-    localparam half_period_6  = 69; // 0x45 | F4  = 349.2 Hz
-    localparam half_period_7  = 65; // 0x41 | F#4 = 370.0 Hz
-    localparam half_period_8  = 61; // 0x3D | G4  = 392.0 Hz
-    localparam half_period_9  = 58; // 0x3A | G#4 = 415.3 Hz
-    localparam half_period_10 = 55; // 0x37 | A4  = 440.0 Hz
+    localparam half_period_1  = 91; // 0x5C | C4  = 261.6 Hz
+    localparam half_period_2  = 86; // 0x57 | C#4 = 277.2 Hz
+    localparam half_period_3  = 81; // 0x52 | D4  = 293.7 Hz
+    localparam half_period_4  = 76; // 0x4D | Eb4 = 311.1 Hz
+    localparam half_period_5  = 72; // 0x49 | E4  = 329.6 Hz
+    localparam half_period_6  = 68; // 0x45 | F4  = 349.2 Hz
+    localparam half_period_7  = 64; // 0x41 | F#4 = 370.0 Hz
+    localparam half_period_8  = 60; // 0x3D | G4  = 392.0 Hz
+    localparam half_period_9  = 57; // 0x3A | G#4 = 415.3 Hz
+    localparam half_period_10 = 54; // 0x37 | A4  = 440.0 Hz
     localparam half_period_11 = 51; // 0x33 | Bb4 = 466.2 Hz
-    localparam half_period_12 = 49; // 0x31 | B4  = 493.9 Hz
+    localparam half_period_12 = 48; // 0x31 | B4  = 493.9 Hz
     
     logic [7:0] next_half_period;
 
